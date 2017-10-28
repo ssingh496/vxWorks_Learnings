@@ -21,7 +21,7 @@
 #include <stdlib.h>
 
 #define MAX_MESSAGES 100 
-#define MAX_MESSAGE_LENGTH 250000
+#define MAX_MESSAGE_LENGTH 250
 
 
 MSG_Q_ID mesgQueueId;
@@ -35,10 +35,10 @@ if ((mesgQueueId = msgQCreate(MAX_MESSAGES,MAX_MESSAGE_LENGTH,MSG_Q_FIFO))
  == NULL)
 	printf("msgQCreate in failed\n");
 /* spawn the two tasks that will use the message queue */
-if((taskIdOne = taskSpawn("t1",100,VX_FP_TASK,500000,(FUNCPTR)taskOne,0,0,0,0,0,0,0,
+if((taskIdOne = taskSpawn("t1",100,VX_FP_TASK,1000,(FUNCPTR)taskOne,0,0,0,0,0,0,0,
  0,0,0)) == ERROR)
 	printf("taskSpawn taskOne failed\n");
-if((taskIdTwo = taskSpawn("t2",1,VX_FP_TASK,500000,(FUNCPTR)taskTwo,0,0,0,0,0,0,0,
+if((taskIdTwo = taskSpawn("t2",1,VX_FP_TASK,1000,(FUNCPTR)taskTwo,0,0,0,0,0,0,0,
  0,0,0)) == ERROR)
 	printf("taskSpawn taskTwo failed\n");
 }
