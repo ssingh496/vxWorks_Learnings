@@ -1,0 +1,175 @@
+Version=1.0
+BuildSupport=Managed
+BuildCommand=%makeprefix% make --no-print-directory
+PreferredBuildSpecs=win32:A*.*
+PreferredBuildSpecs=linux:A*.*
+GlobalMacro.Name=PROJECT_TYPE
+GlobalMacro.PROJECT_TYPE.Value=DKM
+GlobalMacro.Name=DEFINES
+GlobalMacro.DEFINES.Value=
+GlobalMacro.Name=EXPAND_DBG
+GlobalMacro.EXPAND_DBG.Value=0
+GlobalMacro.Name=APICHECK_OPTIONS
+GlobalMacro.APICHECK_OPTIONS.Value=-warning
+Macro.Name=VX_CPU_FAMILY
+Macro.Name=CPU
+Macro.Name=TOOL_FAMILY
+Macro.Name=TOOL_VERSION
+Macro.Name=_CC_VERSION
+Macro.Name=TOOL
+Macro.Name=TOOL_PATH
+Macro.Name=CC_ARCH_SPEC
+Macro.Name=VSB_DIR
+Macro.Name=VSB_CONFIG_FILE
+Macro.Name=LIBPATH
+Macro.Name=LIBS
+Macro.Name=DKM_LONGCALL
+Macro.Name=BDGEN_VSB_INCLUDE
+Macro.Name=APICHECK_CMD
+Macro.Name=APICHECK
+BuildTool.Name=C-Compiler
+BuildTool.C-Compiler.InputSuffixes=*.c
+BuildTool.C-Compiler.OutputIsObject=true
+BuildTool.C-Compiler.OutputCanBePassed=false
+BuildTool.Name=C++-Compiler
+BuildTool.C++-Compiler.InputSuffixes=*.cpp;*.CPP;*.C;*.cxx;*.cc
+BuildTool.C++-Compiler.OutputIsObject=true
+BuildTool.C++-Compiler.OutputCanBePassed=false
+BuildTool.Name=Linker
+BuildTool.Linker.InputSuffixes=
+BuildTool.Linker.OutputIsObject=false
+BuildTool.Linker.OutputCanBePassed=false
+BuildTool.Name=Partial Image Linker
+BuildTool.Partial Image Linker.InputSuffixes=
+BuildTool.Partial Image Linker.OutputIsObject=false
+BuildTool.Partial Image Linker.OutputCanBePassed=true
+BuildTool.Name=Librarian
+BuildTool.Librarian.InputSuffixes=
+BuildTool.Librarian.OutputIsObject=false
+BuildTool.Librarian.OutputCanBePassed=true
+BuildTool.Name=Assembler
+BuildTool.Assembler.InputSuffixes=*.s
+BuildTool.Assembler.OutputIsObject=true
+BuildTool.Assembler.OutputCanBePassed=false
+BuildSpec.Name=vsbSIMPC_up_d_SIMNTgnu
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.VX_CPU_FAMILY.Value=simpc
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.CPU.Value=SIMNT
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.TOOL_FAMILY.Value=gnu
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.TOOL_VERSION.Value=gnu_4_8_1_8
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro._CC_VERSION.Value=gnu_4_8_1_10
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.TOOL.Value=gnu
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.TOOL_PATH.Value=#WIND_HOME#/compilers/gnu-4.8.1.10/#WIND_VX7_GNU_HOST_TYPE#/bin
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.CC_ARCH_SPEC.Value=-m32 -mfpmath=387 -fno-implicit-fp -fno-omit-frame-pointer -fno-builtin
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.VSB_DIR.Value=C:/Svn_Working_Copies/GitRepos/pes-dev-e5-vxworks7/Source/PlatformSoftware/SBC/SbcSysSoftware/VSBs/vsbSIMPC_up_d
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.VSB_CONFIG_FILE.Value=#VSB_DIR#/h/config/vsbConfig.h
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.LIBPATH.Value=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.LIBS.Value=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.DKM_LONGCALL.Value=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.BDGEN_VSB_INCLUDE.Value=#VSB_DIR#/h/config/auto.conf
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.APICHECK_CMD.Value=apicheck.sh -r "#VSB_DIR#/krnl/apicheck/forbidden_api.lst" -n "nmpentium" -u -s "$<" "$@" #APICHECK_OPTIONS#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Macro.APICHECK.Value=0
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.IncludeSearchPath=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.IncludeSearchPath=-I#VSB_DIR#/share/h
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.IncludeSearchPath=-isystem#VSB_DIR#/krnl/h/system
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.IncludeSearchPath=-isystem#VSB_DIR#/krnl/h/public
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.IncludeSearchPath=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.IncludeSearchPath=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Symbol=-DCPU=_VX_#CPU#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Symbol=-DTOOL_FAMILY=#TOOL_FAMILY#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Symbol=-DTOOL=#TOOL#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Symbol=-D_WRS_KERNEL
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.SymbolList=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Symbol=-D_VSB_CONFIG_FILE=\"#VSB_DIR#/h/config/vsbConfig.h\"
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.Symbol= 
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.SymbolList=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C-Compiler.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C-Compiler.DebugFlags=-gdwarf-3
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C-Compiler.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C-Compiler.ToolFlags=#CC_ARCH_SPEC# -ansi  -fno-zero-initialized-in-bss -Wall    -MD -MP  #DKM_LONGCALL#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C-Compiler.Command=echo "building $@";%ccompilerprefix% #TOOL_PATH#/ccpentium %DebugModeFlags% %ToolFlags% %Defines% #DEFINES# #ADDED_CFLAGS# %Includes% #ADDED_INCLUDES# -o %OutFile% -c %InFile% && if [ "#APICHECK#" = "1" ]; then #APICHECK_CMD#;fi
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C++-Compiler.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C++-Compiler.DebugFlags=-gdwarf-3
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C++-Compiler.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C++-Compiler.ToolFlags=#CC_ARCH_SPEC# -ansi  -fno-zero-initialized-in-bss -Wall    -MD -MP  #DKM_LONGCALL#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.C++-Compiler.Command=echo "building $@";%cppcompilerprefix% #TOOL_PATH#/ccpentium %DebugModeFlags% %ToolFlags% %Defines% #DEFINES# #ADDED_C++FLAGS# %Includes% #ADDED_INCLUDES# -o %OutFile% -c %InFile% && if [ "#APICHECK#" = "1" ]; then #APICHECK_CMD#;fi
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Linker.DerivedFileSignatures=*.out
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Linker.DebugFlags=-gdwarf-3
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Linker.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Linker.ToolFlags=-T #WIND_BASE#/build/tool/gnu_4_8_1_8/krnl/ldscripts/link.OUT
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Linker.Command=echo "building $@";rm -f %OutFile%;nmpentium %Objects% | tclsh #WIND_BASE#/host/resource/hutils/tcl/munch.tcl -c pentium -tags #VSB_DIR#/krnl/tags/dkm.tags > #OBJ_DIR#/ctdt.c;%ccompilerprefix% #TOOL_PATH#/ccpentium %DebugModeFlags% #CC_ARCH_SPEC# -fdollars-in-identifiers -Wall   #ADDED_CFLAGS# %Includes% #ADDED_INCLUDES#  #DKM_LONGCALL# %Defines% #DEFINES# -o #OBJ_DIR#/ctdt.o -c #OBJ_DIR#/ctdt.c; %linkerprefix% #TOOL_PATH#/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% #OBJ_DIR#/ctdt.o %Objects% %Libraries% #LIBPATH# #LIBS# #ADDED_LIBPATH# #ADDED_LIBS# && if [ "#EXPAND_DBG#" = "1" ]; then plink "$@";fi && $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Partial Image Linker.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Partial Image Linker.DebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Partial Image Linker.NonDebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Partial Image Linker.ToolFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Partial Image Linker.Command=echo "building $@"; %linkerprefix% #TOOL_PATH#/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% #ADDED_OBJECTS# %Libraries% #LIBPATH# #LIBS# #ADDED_LIBPATH# #ADDED_LIBS# && if [ "#EXPAND_DBG#" = "1" ]; then plink "$@";fi
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Librarian.DerivedFileSignatures=*.a
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Librarian.DebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Librarian.NonDebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Librarian.ToolFlags=crus
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Librarian.Command=echo "building $@";%archiverprefix% #TOOL_PATH#/arpentium %ToolFlags% %OutFile% %Objects% #ADDED_OBJECTS#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Assembler.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Assembler.DebugFlags=-gdwarf-3
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Assembler.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Assembler.ToolFlags=#CC_ARCH_SPEC# -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP  #DKM_LONGCALL#
+BuildSpec.vsbSIMPC_up_d_SIMNTgnu.BuildTool.Assembler.Command=echo "building $@";%assemblerprefix% #TOOL_PATH#/ccpentium %DebugModeFlags% %ToolFlags% %Defines% #DEFINES# #ADDED_CFLAGS# %Includes% #ADDED_INCLUDES# -o %OutFile% -c %InFile%
+BuildSpec.Name=vsbSIMPC_up_d_SIMNTicc
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.VX_CPU_FAMILY.Value=simpc
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.CPU.Value=SIMNT
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.TOOL_FAMILY.Value=icc
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.TOOL_VERSION.Value=icc_16
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro._CC_VERSION.Value=icc_16_0_0_039
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.TOOL.Value=icc
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.TOOL_PATH.Value=#WIND_HOME#/compilers/icc_vxworks-16.0.0.039/#WIND_VX7_ICC_HOST_TYPE#/bin/intel64
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.CC_ARCH_SPEC.Value=-m32 -mtune=i486 -march=i486 -mfpmath=387 -fno-implicit-fp-sse -fno-omit-frame-pointer
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.VSB_DIR.Value=C:/Svn_Working_Copies/GitRepos/pes-dev-e5-vxworks7/Source/PlatformSoftware/SBC/SbcSysSoftware/VSBs/vsbSIMPC_up_d
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.VSB_CONFIG_FILE.Value=#VSB_DIR#/h/config/vsbConfig.h
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.LIBPATH.Value=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.LIBS.Value=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.DKM_LONGCALL.Value=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.BDGEN_VSB_INCLUDE.Value=#VSB_DIR#/h/config/auto.conf
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.APICHECK_CMD.Value=apicheck.sh -r "#VSB_DIR#/krnl/apicheck/forbidden_api.lst" -n "nmpentium" -u -s "$<" "$@" #APICHECK_OPTIONS#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Macro.APICHECK.Value=0
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.IncludeSearchPath=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.IncludeSearchPath=-I#VSB_DIR#/share/h
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.IncludeSearchPath=-isystem#VSB_DIR#/krnl/h/system
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.IncludeSearchPath=-isystem#VSB_DIR#/krnl/h/public
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.IncludeSearchPath=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.IncludeSearchPath=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Symbol=-DCPU=_VX_#CPU#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Symbol=-DTOOL_FAMILY=#TOOL_FAMILY#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Symbol=-DTOOL=#TOOL#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Symbol=-D_WRS_KERNEL
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.SymbolList=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Symbol=-D_VSB_CONFIG_FILE=\"#VSB_DIR#/h/config/vsbConfig.h\"
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.Symbol= 
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.SymbolList=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C-Compiler.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C-Compiler.DebugFlags=-g -O0
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C-Compiler.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C-Compiler.ToolFlags=#CC_ARCH_SPEC# -ansi  -fno-zero-initialized-in-bss -Wall   -MD -MP  #DKM_LONGCALL#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C-Compiler.Command=echo "building $@";%ccompilerprefix% #TOOL_PATH#/icc %DebugModeFlags% %ToolFlags% %Defines% #DEFINES# #ADDED_CFLAGS# %Includes% #ADDED_INCLUDES# -o %OutFile% -c %InFile% && if [ "#APICHECK#" = "1" ]; then #APICHECK_CMD#;fi
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C++-Compiler.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C++-Compiler.DebugFlags=-g -O0
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C++-Compiler.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C++-Compiler.ToolFlags=#CC_ARCH_SPEC# -ansi  -fno-omit-frame-pointer  -fno-zero-initialized-in-bss -Wall   -MD -MP  #DKM_LONGCALL#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.C++-Compiler.Command=echo "building $@";%cppcompilerprefix% #TOOL_PATH#/icc %DebugModeFlags% %ToolFlags% %Defines% #DEFINES# #ADDED_C++FLAGS# %Includes% #ADDED_INCLUDES# -o %OutFile% -c %InFile% && if [ "#APICHECK#" = "1" ]; then #APICHECK_CMD#;fi
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Linker.DerivedFileSignatures=*.out
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Linker.DebugFlags=-g -O0
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Linker.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Linker.ToolFlags=-T #WIND_BASE#/build/tool/icc_16/krnl/ldscripts/link.OUT
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Linker.Command=echo "building $@";rm -f %OutFile%;nmpentium %Objects% | tclsh #WIND_BASE#/host/resource/hutils/tcl/munch.tcl -c pentium -tags #VSB_DIR#/krnl/tags/dkm.tags > #OBJ_DIR#/ctdt.c;%ccompilerprefix% #TOOL_PATH#/icc %DebugModeFlags% #CC_ARCH_SPEC#  -Wall  #ADDED_CFLAGS# %Includes% #ADDED_INCLUDES#  #DKM_LONGCALL# %Defines% #DEFINES# -o #OBJ_DIR#/ctdt.o -c #OBJ_DIR#/ctdt.c; %linkerprefix% #TOOL_PATH#/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% #OBJ_DIR#/ctdt.o %Objects% %Libraries% #LIBPATH# #LIBS# #ADDED_LIBPATH# #ADDED_LIBS# && if [ "#EXPAND_DBG#" = "1" ]; then plink "$@";fi && $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Partial Image Linker.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Partial Image Linker.DebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Partial Image Linker.NonDebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Partial Image Linker.ToolFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Partial Image Linker.Command=echo "building $@"; %linkerprefix% #TOOL_PATH#/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% #ADDED_OBJECTS# %Libraries% #LIBPATH# #LIBS# #ADDED_LIBPATH# #ADDED_LIBS# && if [ "#EXPAND_DBG#" = "1" ]; then plink "$@";fi
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Librarian.DerivedFileSignatures=*.a
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Librarian.DebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Librarian.NonDebugFlags=
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Librarian.ToolFlags=crus
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Librarian.Command=echo "building $@";%archiverprefix% #WIND_HOME#/compilers/gnu-4.8.1.10/#WIND_VX7_GNU_HOST_TYPE#/bin/arpentium %ToolFlags% %OutFile% %Objects% #ADDED_OBJECTS#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Assembler.DerivedFileSignatures=*.o
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Assembler.DebugFlags=-g -O0
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Assembler.NonDebugFlags=-O2
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Assembler.ToolFlags=#CC_ARCH_SPEC# -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP  #DKM_LONGCALL#
+BuildSpec.vsbSIMPC_up_d_SIMNTicc.BuildTool.Assembler.Command=echo "building $@";%assemblerprefix% #TOOL_PATH#/icc %DebugModeFlags% %ToolFlags% %Defines% #DEFINES# #ADDED_CFLAGS# %Includes% #ADDED_INCLUDES# -o %OutFile% -c %InFile%

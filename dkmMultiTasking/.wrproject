@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wrxml>
+    <properties platform="VxWorks7" platform_name="vxworks-7" root="1" type="DownloadableKernelModuleProject"/>
+    <attributes>
+        <mapAttribute>
+            <intAttribute key="BuildSupportEnabled" value="1"/>
+            <stringAttribute key="BLD::Info|cmd" value="%makeprefix% make --no-print-directory"/>
+            <listAttribute key="BLD::Info|GlobalMacros">
+                <stringAttribute value="PROJECT_TYPE"/>
+                <stringAttribute value="DEFINES"/>
+                <stringAttribute value="EXPAND_DBG"/>
+                <stringAttribute value="APICHECK_OPTIONS"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|GlobalMacro|PROJECT_TYPE" value="DKM"/>
+            <stringAttribute key="BLD::Info|GlobalMacro|DEFINES" value=""/>
+            <stringAttribute key="BLD::Info|GlobalMacro|EXPAND_DBG" value="0"/>
+            <stringAttribute key="BLD::Info|GlobalMacro|APICHECK_OPTIONS" value="-warning"/>
+            <listAttribute key="BLD::Info|Macros">
+                <stringAttribute value="VX_CPU_FAMILY"/>
+                <stringAttribute value="CPU"/>
+                <stringAttribute value="TOOL_FAMILY"/>
+                <stringAttribute value="TOOL_VERSION"/>
+                <stringAttribute value="_CC_VERSION"/>
+                <stringAttribute value="TOOL"/>
+                <stringAttribute value="TOOL_PATH"/>
+                <stringAttribute value="CC_ARCH_SPEC"/>
+                <stringAttribute value="VSB_DIR"/>
+                <stringAttribute value="VSB_CONFIG_FILE"/>
+                <stringAttribute value="LIBPATH"/>
+                <stringAttribute value="LIBS"/>
+                <stringAttribute value="DKM_LONGCALL"/>
+                <stringAttribute value="BDGEN_VSB_INCLUDE"/>
+                <stringAttribute value="APICHECK_CMD"/>
+                <stringAttribute value="APICHECK"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Tools">
+                <stringAttribute value="C-Compiler"/>
+                <stringAttribute value="C++-Compiler"/>
+                <stringAttribute value="Linker"/>
+                <stringAttribute value="Partial Image Linker"/>
+                <stringAttribute value="Librarian"/>
+                <stringAttribute value="Assembler"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|sigs" value="*.c"/>
+            <booleanAttribute key="BLD::Info|Tool|C-Compiler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|C-Compiler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|sigs" value="*.cpp;*.CPP;*.C;*.cxx;*.cc"/>
+            <booleanAttribute key="BLD::Info|Tool|C++-Compiler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|C++-Compiler|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|sigs" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Linker|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Linker|passAble" value="false"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|sigs" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Partial Image Linker|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Partial Image Linker|passAble" value="true"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|sigs" value=""/>
+            <booleanAttribute key="BLD::Info|Tool|Librarian|object" value="false"/>
+            <booleanAttribute key="BLD::Info|Tool|Librarian|passAble" value="true"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|sigs" value="*.s"/>
+            <booleanAttribute key="BLD::Info|Tool|Assembler|object" value="true"/>
+            <booleanAttribute key="BLD::Info|Tool|Assembler|passAble" value="false"/>
+            <listAttribute key="BLD::Info|specs">
+                <stringAttribute value="vsbSIMPC_up_d_SIMNTgnu"/>
+                <stringAttribute value="vsbSIMPC_up_d_SIMNTicc"/>
+                <stringAttribute value="vsbSIMPC_smp_d_SIMNTgnu_SMP"/>
+                <stringAttribute value="vsbSIMPC_smp_d_SIMNTicc_SMP"/>
+                <stringAttribute value="vsbTRE54_up_r_SKYLAKEgnu"/>
+                <stringAttribute value="vsbTRE54_up_r_SKYLAKEicc"/>
+                <stringAttribute value="vsbTRE54_smp_r_SKYLAKEgnu_SMP"/>
+                <stringAttribute value="vsbTRE54_smp_r_SKYLAKEicc_SMP"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbSIMPC_up_d_SIMNTgnu" value="vsbSIMPC_up_d_SIMNTgnu"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbSIMPC_up_d_SIMNTgnu" value="simpc"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbSIMPC_up_d_SIMNTgnu" value="SIMNT"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbSIMPC_up_d_SIMNTgnu" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbSIMPC_up_d_SIMNTgnu" value="gnu_4_8_1_8"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbSIMPC_up_d_SIMNTgnu" value="gnu_4_8_1_10"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbSIMPC_up_d_SIMNTgnu" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbSIMPC_up_d_SIMNTgnu" value="$(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbSIMPC_up_d_SIMNTgnu" value="-m32 -mfpmath=387 -fno-implicit-fp -fno-omit-frame-pointer -fno-builtin"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbSIMPC_up_d_SIMNTgnu" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbSIMPC_up_d"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbSIMPC_up_d_SIMNTgnu" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbSIMPC_up_d_SIMNTgnu" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbSIMPC_up_d_SIMNTgnu" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbSIMPC_up_d_SIMNTgnu" value="0"/>
+            <listAttribute key="BLD::Info|Incl|vsbSIMPC_up_d_SIMNTgnu">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Definess|vsbSIMPC_up_d_SIMNTgnu">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbSIMPC_up_d_SIMNTgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbSIMPC_up_d_SIMNTgnu" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall  -Werror -Wextra   -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbSIMPC_up_d_SIMNTgnu" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbSIMPC_up_d_SIMNTgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbSIMPC_up_d_SIMNTgnu" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss -Wall    -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbSIMPC_up_d_SIMNTgnu" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbSIMPC_up_d_SIMNTgnu" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbSIMPC_up_d_SIMNTgnu" value="-T $(WIND_BASE)/build/tool/gnu_4_8_1_8/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbSIMPC_up_d_SIMNTgnu" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall   $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbSIMPC_up_d_SIMNTgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbSIMPC_up_d_SIMNTgnu" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbSIMPC_up_d_SIMNTgnu" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbSIMPC_up_d_SIMNTgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbSIMPC_up_d_SIMNTgnu" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbSIMPC_up_d_SIMNTgnu" value="echo &quot;building $@&quot;;%archiverprefix% $(TOOL_PATH)/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbSIMPC_up_d_SIMNTgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbSIMPC_up_d_SIMNTgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbSIMPC_up_d_SIMNTgnu" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbSIMPC_up_d_SIMNTgnu" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|redirDir|vsbSIMPC_up_d_SIMNTicc" value="vsbSIMPC_up_d_SIMNTicc"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbSIMPC_up_d_SIMNTicc" value="simpc"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbSIMPC_up_d_SIMNTicc" value="SIMNT"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbSIMPC_up_d_SIMNTicc" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbSIMPC_up_d_SIMNTicc" value="icc_16"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbSIMPC_up_d_SIMNTicc" value="icc_16_0_0_039"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbSIMPC_up_d_SIMNTicc" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbSIMPC_up_d_SIMNTicc" value="$(WIND_HOME)/compilers/icc_vxworks-16.0.0.039/$(WIND_VX7_ICC_HOST_TYPE)/bin/intel64"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbSIMPC_up_d_SIMNTicc" value="-m32 -mtune=i486 -march=i486 -mfpmath=387 -fno-implicit-fp-sse -fno-omit-frame-pointer"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbSIMPC_up_d_SIMNTicc" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbSIMPC_up_d"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbSIMPC_up_d_SIMNTicc" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbSIMPC_up_d_SIMNTicc" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbSIMPC_up_d_SIMNTicc" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbSIMPC_up_d_SIMNTicc" value="0"/>
+            <listAttribute key="BLD::Info|Incl|vsbSIMPC_up_d_SIMNTicc">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Definess|vsbSIMPC_up_d_SIMNTicc">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbSIMPC_up_d_SIMNTicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbSIMPC_up_d_SIMNTicc" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall  -Werror -Wextra  -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbSIMPC_up_d_SIMNTicc" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbSIMPC_up_d_SIMNTicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbSIMPC_up_d_SIMNTicc" value="$(CC_ARCH_SPEC) -ansi  -fno-omit-frame-pointer  -fno-zero-initialized-in-bss -Wall   -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbSIMPC_up_d_SIMNTicc" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbSIMPC_up_d_SIMNTicc" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbSIMPC_up_d_SIMNTicc" value="-T $(WIND_BASE)/build/tool/icc_16/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbSIMPC_up_d_SIMNTicc" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% $(CC_ARCH_SPEC)  -Wall  $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbSIMPC_up_d_SIMNTicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbSIMPC_up_d_SIMNTicc" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbSIMPC_up_d_SIMNTicc" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbSIMPC_up_d_SIMNTicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbSIMPC_up_d_SIMNTicc" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbSIMPC_up_d_SIMNTicc" value="echo &quot;building $@&quot;;%archiverprefix% $(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbSIMPC_up_d_SIMNTicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbSIMPC_up_d_SIMNTicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbSIMPC_up_d_SIMNTicc" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbSIMPC_up_d_SIMNTicc" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|redirRoot" value=""/>
+            <stringAttribute key="BLD::Info|defaultSpec" value="vsbSIMPC_up_d_SIMNTgnu"/>
+            <listAttribute key="BLD::Info|Libs|vsbSIMPC_up_d_SIMNTgnu"/>
+            <listAttribute key="BLD::Info|Libs|vsbSIMPC_up_d_SIMNTicc"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="simpc"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="SIMNT"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="gnu_4_8_1_8"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="gnu_4_8_1_10"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-m32 -mfpmath=387 -fno-implicit-fp -fno-omit-frame-pointer -fno-builtin"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbSIMPC_smp_d"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall -Werror -Wextra    -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss -Wall    -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall   $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-T $(WIND_BASE)/build/tool/gnu_4_8_1_8/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="echo &quot;building $@&quot;;%archiverprefix% $(TOOL_PATH)/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="*.o"/>
+            <listAttribute key="BLD::Info|Incl|vsbSIMPC_smp_d_SIMNTgnu_SMP">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Libs|vsbSIMPC_smp_d_SIMNTgnu_SMP"/>
+            <listAttribute key="BLD::Info|Definess|vsbSIMPC_smp_d_SIMNTgnu_SMP">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_WRS_VX_SMP"/>
+                <stringAttribute value="-D_WRS_CONFIG_SMP"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbSIMPC_smp_d_SIMNTgnu_SMP" value="vsbSIMPC_smp_d_SIMNTgnu_SMP"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="simpc"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="SIMNT"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="icc_16"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="icc_16_0_0_039"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(WIND_HOME)/compilers/icc_vxworks-16.0.0.039/$(WIND_VX7_ICC_HOST_TYPE)/bin/intel64"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-m32 -mtune=i486 -march=i486 -mfpmath=387 -fno-implicit-fp-sse -fno-omit-frame-pointer"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbSIMPC_smp_d"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbSIMPC_smp_d_SIMNTicc_SMP" value="0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbSIMPC_smp_d_SIMNTicc_SMP" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall -Werror -Wextra -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbSIMPC_smp_d_SIMNTicc_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbSIMPC_smp_d_SIMNTicc_SMP" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-omit-frame-pointer  -fno-zero-initialized-in-bss -Wall   -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbSIMPC_smp_d_SIMNTicc_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbSIMPC_smp_d_SIMNTicc_SMP" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% $(CC_ARCH_SPEC)  -Wall  $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-T $(WIND_BASE)/build/tool/icc_16/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbSIMPC_smp_d_SIMNTicc_SMP" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbSIMPC_smp_d_SIMNTicc_SMP" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbSIMPC_smp_d_SIMNTicc_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbSIMPC_smp_d_SIMNTicc_SMP" value="echo &quot;building $@&quot;;%archiverprefix% $(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbSIMPC_smp_d_SIMNTicc_SMP" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbSIMPC_smp_d_SIMNTicc_SMP" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP  $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbSIMPC_smp_d_SIMNTicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbSIMPC_smp_d_SIMNTicc_SMP" value="*.o"/>
+            <listAttribute key="BLD::Info|Incl|vsbSIMPC_smp_d_SIMNTicc_SMP">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Libs|vsbSIMPC_smp_d_SIMNTicc_SMP"/>
+            <listAttribute key="BLD::Info|Definess|vsbSIMPC_smp_d_SIMNTicc_SMP">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_WRS_VX_SMP"/>
+                <stringAttribute value="-D_WRS_CONFIG_SMP"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbSIMPC_smp_d_SIMNTicc_SMP" value="vsbSIMPC_smp_d_SIMNTicc_SMP"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbTRE54_up_r_SKYLAKEgnu" value="pentium"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbTRE54_up_r_SKYLAKEgnu" value="SKYLAKE"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbTRE54_up_r_SKYLAKEgnu" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbTRE54_up_r_SKYLAKEgnu" value="gnu_4_8_1_8"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbTRE54_up_r_SKYLAKEgnu" value="gnu_4_8_1_10"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbTRE54_up_r_SKYLAKEgnu" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbTRE54_up_r_SKYLAKEgnu" value="$(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbTRE54_up_r_SKYLAKEgnu" value="-march=corei7 -mpopcnt -maes -mpclmul -mavx -mfsgsbase -mrdrnd -mf16c -mavx2 -mmovbe -mfma -mbmi -mbmi2 -mrdseed -madx -mprfchw -nostdlib -fno-builtin -fno-defer-pop -fno-implicit-fp"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbTRE54_up_r_SKYLAKEgnu" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbTRE54_up_r"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbTRE54_up_r_SKYLAKEgnu" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbTRE54_up_r_SKYLAKEgnu" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbTRE54_up_r_SKYLAKEgnu" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbTRE54_up_r_SKYLAKEgnu" value="0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbTRE54_up_r_SKYLAKEgnu" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbTRE54_up_r_SKYLAKEgnu" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall -Werror -Wextra   -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbTRE54_up_r_SKYLAKEgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbTRE54_up_r_SKYLAKEgnu" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbTRE54_up_r_SKYLAKEgnu" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss -Wall    -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbTRE54_up_r_SKYLAKEgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbTRE54_up_r_SKYLAKEgnu" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall   $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbTRE54_up_r_SKYLAKEgnu" value="-T $(WIND_BASE)/build/tool/gnu_4_8_1_8/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbTRE54_up_r_SKYLAKEgnu" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbTRE54_up_r_SKYLAKEgnu" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbTRE54_up_r_SKYLAKEgnu" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbTRE54_up_r_SKYLAKEgnu" value="echo &quot;building $@&quot;;%archiverprefix% $(TOOL_PATH)/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbTRE54_up_r_SKYLAKEgnu" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbTRE54_up_r_SKYLAKEgnu" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbTRE54_up_r_SKYLAKEgnu" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbTRE54_up_r_SKYLAKEgnu" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbTRE54_up_r_SKYLAKEgnu" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbTRE54_up_r_SKYLAKEgnu" value="*.o"/>
+            <listAttribute key="BLD::Info|Incl|vsbTRE54_up_r_SKYLAKEgnu">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Libs|vsbTRE54_up_r_SKYLAKEgnu"/>
+            <listAttribute key="BLD::Info|Definess|vsbTRE54_up_r_SKYLAKEgnu">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbTRE54_up_r_SKYLAKEgnu" value="vsbTRE54_up_r_SKYLAKEgnu"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbTRE54_up_r_SKYLAKEicc" value="pentium"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbTRE54_up_r_SKYLAKEicc" value="SKYLAKE"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbTRE54_up_r_SKYLAKEicc" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbTRE54_up_r_SKYLAKEicc" value="icc_16"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbTRE54_up_r_SKYLAKEicc" value="icc_16_0_0_039"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbTRE54_up_r_SKYLAKEicc" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbTRE54_up_r_SKYLAKEicc" value="$(WIND_HOME)/compilers/icc_vxworks-16.0.0.039/$(WIND_VX7_ICC_HOST_TYPE)/bin/intel64"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbTRE54_up_r_SKYLAKEicc" value="-xCORE-AVX2 -nostdlib -fno-builtin -fno-defer-pop -m32 -fno-implicit-fp-sse"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbTRE54_up_r_SKYLAKEicc" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbTRE54_up_r"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbTRE54_up_r_SKYLAKEicc" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbTRE54_up_r_SKYLAKEicc" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbTRE54_up_r_SKYLAKEicc" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbTRE54_up_r_SKYLAKEicc" value="0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbTRE54_up_r_SKYLAKEicc" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbTRE54_up_r_SKYLAKEicc" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall -Werror -Wextra -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbTRE54_up_r_SKYLAKEicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbTRE54_up_r_SKYLAKEicc" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbTRE54_up_r_SKYLAKEicc" value="$(CC_ARCH_SPEC) -ansi  -fno-omit-frame-pointer  -fno-zero-initialized-in-bss -Wall   -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbTRE54_up_r_SKYLAKEicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbTRE54_up_r_SKYLAKEicc" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% $(CC_ARCH_SPEC)  -Wall  $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbTRE54_up_r_SKYLAKEicc" value="-T $(WIND_BASE)/build/tool/icc_16/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbTRE54_up_r_SKYLAKEicc" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbTRE54_up_r_SKYLAKEicc" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbTRE54_up_r_SKYLAKEicc" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbTRE54_up_r_SKYLAKEicc" value="echo &quot;building $@&quot;;%archiverprefix% $(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbTRE54_up_r_SKYLAKEicc" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbTRE54_up_r_SKYLAKEicc" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbTRE54_up_r_SKYLAKEicc" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbTRE54_up_r_SKYLAKEicc" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbTRE54_up_r_SKYLAKEicc" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbTRE54_up_r_SKYLAKEicc" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbTRE54_up_r_SKYLAKEicc" value="*.o"/>
+            <listAttribute key="BLD::Info|Incl|vsbTRE54_up_r_SKYLAKEicc">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Libs|vsbTRE54_up_r_SKYLAKEicc"/>
+            <listAttribute key="BLD::Info|Definess|vsbTRE54_up_r_SKYLAKEicc">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbTRE54_up_r_SKYLAKEicc" value="vsbTRE54_up_r_SKYLAKEicc"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="pentium"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="SKYLAKE"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="gnu_4_8_1_8"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="gnu_4_8_1_10"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="gnu"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-march=corei7 -mpopcnt -maes -mpclmul -mavx -mfsgsbase -mrdrnd -mf16c -mavx2 -mmovbe -mfma -mbmi -mbmi2 -mrdseed -madx -mprfchw -nostdlib -fno-builtin -fno-defer-pop -fno-implicit-fp"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbTRE54_smp_r"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall -Werror -Wextra -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss -Wall    -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall   $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-T $(WIND_BASE)/build/tool/gnu_4_8_1_8/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/ccpentium -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="echo &quot;building $@&quot;;%archiverprefix% $(TOOL_PATH)/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/ccpentium %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-gdwarf-3"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="*.o"/>
+            <listAttribute key="BLD::Info|Incl|vsbTRE54_smp_r_SKYLAKEgnu_SMP">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Libs|vsbTRE54_smp_r_SKYLAKEgnu_SMP"/>
+            <listAttribute key="BLD::Info|Definess|vsbTRE54_smp_r_SKYLAKEgnu_SMP">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_WRS_VX_SMP"/>
+                <stringAttribute value="-D_WRS_CONFIG_SMP"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbTRE54_smp_r_SKYLAKEgnu_SMP" value="vsbTRE54_smp_r_SKYLAKEgnu_SMP"/>
+            <stringAttribute key="BLD::Info|Macro|VX_CPU_FAMILY|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="pentium"/>
+            <stringAttribute key="BLD::Info|Macro|CPU|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="SKYLAKE"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_FAMILY|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_VERSION|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="icc_16"/>
+            <stringAttribute key="BLD::Info|Macro|_CC_VERSION|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="icc_16_0_0_039"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="icc"/>
+            <stringAttribute key="BLD::Info|Macro|TOOL_PATH|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(WIND_HOME)/compilers/icc_vxworks-16.0.0.039/$(WIND_VX7_ICC_HOST_TYPE)/bin/intel64"/>
+            <stringAttribute key="BLD::Info|Macro|CC_ARCH_SPEC|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-xCORE-AVX2 -nostdlib -fno-builtin -fno-defer-pop -m32 -fno-implicit-fp-sse"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_DIR|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(PRJ_ROOT_DIR)/../../VSBs/vsbTRE54_smp_r"/>
+            <stringAttribute key="BLD::Info|Macro|VSB_CONFIG_FILE|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(VSB_DIR)/h/config/vsbConfig.h"/>
+            <stringAttribute key="BLD::Info|Macro|LIBPATH|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|LIBS|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|DKM_LONGCALL|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Macro|BDGEN_VSB_INCLUDE|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(VSB_DIR)/h/config/auto.conf"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK_CMD|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="apicheck.sh -r &quot;$(VSB_DIR)/krnl/apicheck/forbidden_api.lst&quot; -n &quot;nmpentium&quot; -u -s &quot;$&lt;&quot; &quot;$@&quot; $(APICHECK_OPTIONS)"/>
+            <stringAttribute key="BLD::Info|Macro|APICHECK|value|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|cmd|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="echo &quot;building $@&quot;;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(CC_ARCH_SPEC) -std=c99 -fno-zero-initialized-in-bss -Wall -Werror -Wextra   -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|derivedSigs|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|cmd|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="echo &quot;building $@&quot;;%cppcompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_C++FLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile% &amp;&amp; if [ &quot;$(APICHECK)&quot; = &quot;1&quot; ]; then $(APICHECK_CMD);fi"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-omit-frame-pointer  -fno-zero-initialized-in-bss -Wall   -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|dbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|derivedSigs|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|cmd|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="echo &quot;building $@&quot;;rm -f %OutFile%;nmpentium %Objects% | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c pentium -tags $(VSB_DIR)/krnl/tags/dkm.tags &gt; $(OBJ_DIR)/ctdt.c;%ccompilerprefix% $(TOOL_PATH)/icc %DebugModeFlags% $(CC_ARCH_SPEC)  -Wall  $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES)  $(DKM_LONGCALL) %Defines% $(DEFINES) -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% $(OBJ_DIR)/ctdt.o %Objects% %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi &amp;&amp; $(if $(_WRS_CONFIG_SECURE_LOADER),signtool --key=$(_WRS_CONFIG_SECURE_LOADER_PRIVATE_SIGNING_KEY_FILE) --cert=$(_WRS_CONFIG_SECURE_LOADER_PUBLIC_SIGNING_CERT_FILE) --type=ELF $@,true)"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|flags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-T $(WIND_BASE)/build/tool/icc_16/krnl/ldscripts/link.OUT"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|dbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Linker|derivedSigs|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="*.out"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|cmd|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="echo &quot;building $@&quot;; %linkerprefix% $(TOOL_PATH)/icc -m32 -r -nostdlib -Wl,-X %ToolFlags% -o %OutFile% %Objects% $(ADDED_OBJECTS) %Libraries% $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS) &amp;&amp; if [ &quot;$(EXPAND_DBG)&quot; = &quot;1&quot; ]; then plink &quot;$@&quot;;fi"/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|flags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|dbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Partial Image Linker|derivedSigs|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="*.o"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|cmd|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="echo &quot;building $@&quot;;%archiverprefix% $(WIND_HOME)/compilers/gnu-4.8.1.10/$(WIND_VX7_GNU_HOST_TYPE)/bin/arpentium %ToolFlags% %OutFile% %Objects% $(ADDED_OBJECTS)"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|flags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="crus"/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|dbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value=""/>
+            <stringAttribute key="BLD::Info|Tool|Librarian|derivedSigs|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="*.a"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|cmd|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="echo &quot;building $@&quot;;%assemblerprefix% $(TOOL_PATH)/icc %DebugModeFlags% %ToolFlags% %Defines% $(DEFINES) $(ADDED_CFLAGS) %Includes% $(ADDED_INCLUDES) -o %OutFile% -c %InFile%"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|flags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="$(CC_ARCH_SPEC) -ansi  -fno-zero-initialized-in-bss  -xassembler-with-cpp  -MD -MP $(DKM_LONGCALL)"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|dbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-g -O0"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|nonDbgFlags|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="-O2"/>
+            <stringAttribute key="BLD::Info|Tool|Assembler|derivedSigs|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="*.o"/>
+            <listAttribute key="BLD::Info|Incl|vsbTRE54_smp_r_SKYLAKEicc_SMP">
+                <stringAttribute value="-I$(VSB_DIR)/share/h"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/system"/>
+                <stringAttribute value="-isystem$(VSB_DIR)/krnl/h/public"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/BalLib/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/SystemLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/AppLib/vxWorks/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/Common/h"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/../../Library/CompLib/vxWorks/h"/>
+                <stringAttribute value="-I%Proj-vipTRE54_bootapp_up_r%"/>
+                <stringAttribute value="-I%Proj-vsbSIMPC_smp_d%/usr/h/public"/>
+                <stringAttribute value="-I%Proj-vsbTRE54_up_r%/krnl/h/public"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/ppc-1.3.1.3/kernel/base/h"/>
+                <stringAttribute value="-I$(WIND_LAYER_PATHS)/os/arch/arm-1.1.10.0/kernel/armbase/h"/>
+            </listAttribute>
+            <listAttribute key="BLD::Info|Libs|vsbTRE54_smp_r_SKYLAKEicc_SMP"/>
+            <listAttribute key="BLD::Info|Definess|vsbTRE54_smp_r_SKYLAKEicc_SMP">
+                <stringAttribute value="-DCPU=_VX_$(CPU)"/>
+                <stringAttribute value="-DTOOL_FAMILY=$(TOOL_FAMILY)"/>
+                <stringAttribute value="-DTOOL=$(TOOL)"/>
+                <stringAttribute value="-D_WRS_KERNEL"/>
+                <stringAttribute value="-D_WRS_VX_SMP"/>
+                <stringAttribute value="-D_WRS_CONFIG_SMP"/>
+                <stringAttribute value="-D_VSB_CONFIG_FILE=\&quot;$(VSB_DIR)/h/config/vsbConfig.h\&quot;"/>
+                <stringAttribute value="-DBID_VERSION=\&quot;$(RELEASE_VER)\&quot;"/>
+                <stringAttribute value="-DBID_SCMREV=\&quot;$(SCM_REV)\&quot;"/>
+                <stringAttribute value="-DBID_BRANCH=\&quot;$(BRANCH)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDHOST=\&quot;$(BUILD_HOST)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDAGENT=\&quot;$(BUILD_AGENT)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDspec=\&quot;$(BUILDspec)\&quot;"/>
+                <stringAttribute value="-DBID_DEBUGspec=\&quot;$(DEBUGspec)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDPLAN=\&quot;$(BUILD_PLAN)\&quot;"/>
+                <stringAttribute value="-DBID_BUILDNUM=\&quot;$(BUILD_NUM)\&quot;"/>
+            </listAttribute>
+            <stringAttribute key="BLD::Info|redirDir|vsbTRE54_smp_r_SKYLAKEicc_SMP" value="vsbTRE54_smp_r_SKYLAKEicc_SMP"/>
+        </mapAttribute>
+    </attributes>
+    <buildtargets>
+        <buildtarget buildtool="Linker" name="dkmMultiTasking" passed="false" targetname="dkmMultiTasking">
+            <contents>
+                <buildtargetreference name="/dkmMultiTasking/dkmMultiTasking_partialImage"/>
+            </contents>
+        </buildtarget>
+        <buildtarget buildtool="Partial Image Linker" name="dkmMultiTasking_partialImage" passed="true" targetname="dkmMultiTasking_partialImage">
+            <contents>
+                <folder name="/dkmMultiTasking" recursive="true"/>
+            </contents>
+        </buildtarget>
+    </buildtargets>
+</wrxml>
